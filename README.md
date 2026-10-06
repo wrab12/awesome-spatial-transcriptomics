@@ -148,7 +148,7 @@ Landmark platforms and their method papers, grouped by how they measure and sort
 
 **[⬆ back to top](#contents)**
 
-## 🗺️ Spatial Transcriptomics Analysis
+## 📍 Spatial Transcriptomics Analysis
 
 ### Spatial frameworks
 
@@ -603,7 +603,7 @@ Independent comparisons to consult before picking a method.
 
 **[⬆ back to top](#contents)**
 
-## 🗄️ Data
+## 📦 Data
 
 ### Atlases, data portals & databases
 
