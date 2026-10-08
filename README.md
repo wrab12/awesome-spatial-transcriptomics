@@ -26,7 +26,7 @@ Within each table, tools are sorted by GitHub stars. Stars measure popularity, n
 - [Spatial Transcriptomics Analysis](#-spatial-transcriptomics-analysis)
   - [Spatial frameworks](#spatial-frameworks)
   - [Cell segmentation & preprocessing](#cell-segmentation--preprocessing)
-  - [Spatially variable genes](#spatially-variable-genes)
+  - [Spatially variable genes & co-expression](#spatially-variable-genes--co-expression)
   - [Spatial domains & clustering](#spatial-domains--clustering)
   - [Deconvolution & single-cell mapping](#deconvolution--single-cell-mapping)
   - [Alignment, integration & 3D reconstruction](#alignment-integration--3d-reconstruction)
@@ -184,18 +184,23 @@ From images and transcripts or bins to cells.
 | [Segger](https://github.com/dpeerlab/segger) | Graph neural network that assigns transcripts to cells via link prediction on a heterogeneous transcript–cell graph. | Python | [bioRxiv 2025](https://doi.org/10.1101/2025.03.14.643160) *(preprint)* | ![](https://img.shields.io/github/stars/dpeerlab/segger?style=flat-square&logo=github&label=) |
 | [Space Ranger](https://www.10xgenomics.com/support/software/space-ranger) | Official 10x pipelines for Visium/Visium HD: alignment, image registration, tissue detection, binning; v4+ adds nucleus-based cell segmentation. | Rust |  | ![](https://img.shields.io/github/stars/10XGenomics/spaceranger?style=flat-square&logo=github&label=) |
 
-### Spatially variable genes
+### Spatially variable genes & co-expression
 
-Genes whose expression follows tissue structure.
+Genes whose expression follows tissue structure, and genes that vary together in space.
 
 | Tool | Description | Lang | Paper | Stars |
 | --- | --- | --- | --- | --- |
+| [hdWGCNA](https://github.com/smorabit/hdWGCNA) | Weighted gene co-expression network analysis for single-cell and spatial data; builds networks across cellular and spatial hierarchies to find co-expressed gene modules and hub genes. | R | [Cell Reports Methods 2023](https://doi.org/10.1016/j.crmeth.2023.100498) | ![](https://img.shields.io/github/stars/smorabit/hdWGCNA?style=flat-square&logo=github&label=) |
 | [SpatialDE](https://github.com/Teichlab/SpatialDE) | Gaussian-process regression tests each gene for spatial variance; automatic expression histology groups genes into spatial patterns. | Python | [Nature Methods 2018](https://doi.org/10.1038/nmeth.4636) | ![](https://img.shields.io/github/stars/Teichlab/SpatialDE?style=flat-square&logo=github&label=) |
 | [Hotspot](https://github.com/YosefLab/Hotspot) | Local autocorrelation on a cell–cell neighbor graph (spatial or transcriptional) to find informative genes and gene modules. | Python | [Cell Systems 2021](https://doi.org/10.1016/j.cels.2021.04.005) | ![](https://img.shields.io/github/stars/YosefLab/Hotspot?style=flat-square&logo=github&label=) |
 | [MERINGUE](https://github.com/JEFworks-Lab/MERINGUE) | Spatial auto- and cross-correlation on Voronoi-based neighbor graphs; robust to non-uniform cell densities. | R | [Genome Research 2021](https://doi.org/10.1101/gr.271288.120) | ![](https://img.shields.io/github/stars/JEFworks-Lab/MERINGUE?style=flat-square&logo=github&label=) |
 | [SPARK / SPARK-X](https://github.com/xzhoulab/SPARK) | SPARK: spatial generalized linear mixed model on raw counts; SPARK-X: fast non-parametric covariance test for large datasets. | R | [Nature Methods 2020](https://doi.org/10.1038/s41592-019-0701-7) | ![](https://img.shields.io/github/stars/xzhoulab/SPARK?style=flat-square&logo=github&label=) |
+| [Smoothie](https://github.com/caholdener01/Smoothie) | Gaussian smoothing plus genome-wide gene correlation networks to find spatial gene modules at scale; second-order correlation compares patterns across samples. | Python | [Communications Biology 2026](https://doi.org/10.1038/s42003-026-09898-z) | ![](https://img.shields.io/github/stars/caholdener01/Smoothie?style=flat-square&logo=github&label=) |
 | [nnSVG](https://github.com/lmweber/nnSVG) | Scalable SVG detection using nearest-neighbor Gaussian processes with gene-specific length scales; linear in number of spots. | R | [Nature Communications 2023](https://doi.org/10.1038/s41467-023-39748-z) | ![](https://img.shields.io/github/stars/lmweber/nnSVG?style=flat-square&logo=github&label=) |
+| [SpaceX](https://github.com/bayesrx/SpaceX) | Bayesian spatial Poisson-factor model estimating shared and cluster-specific gene co-expression networks, where clusters are cell types or spatial regions. | R | [Bioinformatics 2022](https://doi.org/10.1093/bioinformatics/btac645) | ![](https://img.shields.io/github/stars/bayesrx/SpaceX?style=flat-square&logo=github&label=) |
 | [Celina](https://github.com/pekjoonwu/CELINA) | Spatially varying coefficient model detecting cell type-specific spatially variable genes in spot- or single-cell-resolution data. | R | [Nature Communications 2025](https://doi.org/10.1038/s41467-025-56280-4) | ![](https://img.shields.io/github/stars/pekjoonwu/CELINA?style=flat-square&logo=github&label=) |
+| [SpatialCorr](https://github.com/mbernste/SpatialCorr) | Statistical tests for gene sets whose correlation structure changes across a tissue section, with plots of spatially varying correlation. | Python | [Cell Reports Methods 2022](https://doi.org/10.1016/j.crmeth.2022.100369) | ![](https://img.shields.io/github/stars/mbernste/SpatialCorr?style=flat-square&logo=github&label=) |
+| [scHOT](https://github.com/shazanfar/scHOT) | Tests changes in higher-order statistics such as gene–gene correlation along a trajectory or across spatial locations. | R | [Nature Methods 2020](https://doi.org/10.1038/s41592-020-0885-x) | ![](https://img.shields.io/github/stars/shazanfar/scHOT?style=flat-square&logo=github&label=) |
 | [sepal](https://github.com/almaan/sepal) | Simulates diffusion of each gene's expression; genes slow to reach homogeneity are ranked as spatially structured. | Python | [Bioinformatics 2021](https://doi.org/10.1093/bioinformatics/btab164) | ![](https://img.shields.io/github/stars/almaan/sepal?style=flat-square&logo=github&label=) |
 | [SpaGFT](https://github.com/OSU-BMBL/SpaGFT) | Graph Fourier transform of expression on spatial graphs identifies SVGs and tissue modules; enhances downstream ML tasks. | Python | [Nature Communications 2024](https://doi.org/10.1038/s41467-024-51590-5) | ![](https://img.shields.io/github/stars/OSU-BMBL/SpaGFT?style=flat-square&logo=github&label=) |
 
