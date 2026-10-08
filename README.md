@@ -26,6 +26,7 @@ Within each table, tools are sorted by GitHub stars. Stars measure popularity, n
 - [Spatial Transcriptomics Analysis](#-spatial-transcriptomics-analysis)
   - [Spatial frameworks](#spatial-frameworks)
   - [Cell segmentation & preprocessing](#cell-segmentation--preprocessing)
+  - [Subcellular RNA localization](#subcellular-rna-localization)
   - [Spatially variable genes & co-expression](#spatially-variable-genes--co-expression)
   - [Spatial domains & clustering](#spatial-domains--clustering)
   - [Deconvolution & single-cell mapping](#deconvolution--single-cell-mapping)
@@ -183,6 +184,18 @@ From images and transcripts or bins to cells.
 | [ENACT](https://github.com/Sanofi-Public/enact-pipeline) | End-to-end Visium HD pipeline: cell segmentation, bin-to-cell assignment and cell-type annotation across whole tissue sections. | Python | [Bioinformatics 2025](https://doi.org/10.1093/bioinformatics/btaf094) | ![](https://img.shields.io/github/stars/Sanofi-Public/enact-pipeline?style=flat-square&logo=github&label=) |
 | [Segger](https://github.com/dpeerlab/segger) | Graph neural network that assigns transcripts to cells via link prediction on a heterogeneous transcript–cell graph. | Python | [bioRxiv 2025](https://doi.org/10.1101/2025.03.14.643160) *(preprint)* | ![](https://img.shields.io/github/stars/dpeerlab/segger?style=flat-square&logo=github&label=) |
 | [Space Ranger](https://www.10xgenomics.com/support/software/space-ranger) | Official 10x pipelines for Visium/Visium HD: alignment, image registration, tissue detection, binning; v4+ adds nucleus-based cell segmentation. | Rust |  | ![](https://img.shields.io/github/stars/10XGenomics/spaceranger?style=flat-square&logo=github&label=) |
+
+### Subcellular RNA localization
+
+Where transcripts sit inside cells, for imaging-based platforms that record each molecule's position. For a walkthrough, see the [OSTA chapter on subcellular analysis](https://bioconductor.org/books/release/OSTA/pages/img-sub-cellular-analysis.html).
+
+| Tool | Description | Lang | Paper | Stars |
+| --- | --- | --- | --- | --- |
+| [Bento](https://github.com/YeoLab/bento-tools) | Python toolkit (scverse ecosystem) that uses transcript coordinates and segmentation boundaries to define subcellular domains, annotate RNA localization patterns and quantify gene–gene colocalization. | Python | [Genome Biology 2024](https://doi.org/10.1186/s13059-024-03217-7) | ![](https://img.shields.io/github/stars/YeoLab/bento-tools?style=flat-square&logo=github&label=) |
+| [FISHFactor](https://github.com/bioFAM/FISHFactor) | Factor model treating each transcript as a point in a Poisson point process; finds subcellular expression patterns and co-localized genes shared across cells. | Python | [Bioinformatics 2023](https://doi.org/10.1093/bioinformatics/btad183) | ![](https://img.shields.io/github/stars/bioFAM/FISHFactor?style=flat-square&logo=github&label=) |
+| [InSTAnT](https://github.com/bhavaygg/InSTAnT) | Statistical tests and algorithms that detect gene pairs and modules whose transcripts co-localize within cells, at single-molecule resolution. | Python | [Nature Communications 2024](https://doi.org/10.1038/s41467-024-49457-w) | ![](https://img.shields.io/github/stars/bhavaygg/InSTAnT?style=flat-square&logo=github&label=) |
+| [CellSP](https://github.com/bhavaygg/CellSP) | Finds gene-cell modules, gene sets with coordinated subcellular transcript distributions across many cells, with visualizations and functional interpretation. | Python | [Communications Biology 2025](https://doi.org/10.1038/s42003-025-08891-2) | ![](https://img.shields.io/github/stars/bhavaygg/CellSP?style=flat-square&logo=github&label=) |
+| [ELLA](https://github.com/jadexq/ELLA) | Over-dispersed nonhomogeneous Poisson process in a unified cellular coordinate system detects genes with subcellular spatial variation, such as nuclear or membrane enrichment. | Python | [Nature Communications 2025](https://doi.org/10.1038/s41467-025-64867-0) | ![](https://img.shields.io/github/stars/jadexq/ELLA?style=flat-square&logo=github&label=) |
 
 ### Spatially variable genes & co-expression
 
