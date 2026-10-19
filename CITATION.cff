@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this list, please cite it as below."
 type: dataset
 title: "Awesome Spatial Transcriptomics"
+doi: 10.5281/zenodo.23485796
 abstract: >-
   A curated list of methods, software, foundation models, data resources and tutorials
   for spatial transcriptomics and the single-cell analyses it relies on, ordered by

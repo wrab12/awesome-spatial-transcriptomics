@@ -7,6 +7,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 ![Last updated](https://img.shields.io/badge/last%20updated-October%202026-blue?style=flat-square)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey.svg?style=flat-square)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23485796.svg)](https://doi.org/10.5281/zenodo.23485796)
 
 Spatial transcriptomics measures gene expression while keeping track of where each cell sits in the tissue. New platforms appear every year, there are hundreds of methods, and foundation models have joined in. This list aims to make the field easy to navigate:
 

@@ -345,10 +345,11 @@
     } else if (el('[data-bib]')) {
       const btn = el('[data-bib]');
       const e = E.find((x) => x.id === btn.dataset.bib);
-      if (!e || !e.paper || !e.paper.bibtex) return;
-      try { await navigator.clipboard.writeText(e.paper.bibtex); }
+      const text = btn.dataset.bib === '__list' ? listBibtex() : e && e.paper && e.paper.bibtex;
+      if (!text) return;
+      try { await navigator.clipboard.writeText(text); }
       catch (err) {
-        const ta = Object.assign(document.createElement('textarea'), { value: e.paper.bibtex });
+        const ta = Object.assign(document.createElement('textarea'), { value: text });
         document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
       }
       btn.textContent = 'Copied'; btn.classList.add('done');
@@ -404,6 +405,16 @@
     document.documentElement.dataset.theme = next;
     try { localStorage.setItem('ast-theme', next); } catch (e) { /* storage may be unavailable */ }
   });
+
+  /* ---------- citing the list itself (Zenodo concept DOI, so it always resolves to the latest version) ---------- */
+  const listBibtex = () => `@misc{wang_awesome_spatial_transcriptomics,\n  author = {Wang, Rui},\n  title = {Awesome Spatial Transcriptomics},\n`
+    + `  publisher = {Zenodo},\n  year = {${D.cite.year}},\n  doi = {${D.cite.doi}},\n  url = {https://doi.org/${D.cite.doi}}\n}`;
+  if (D.cite) {
+    $('#cite').innerHTML = `Wang R. <i>Awesome Spatial Transcriptomics</i>. Zenodo, ${D.cite.year}. `
+      + `<a href="https://doi.org/${esc(D.cite.doi)}" target="_blank" rel="noopener">doi:${esc(D.cite.doi)}</a>`
+      + '<button type="button" class="bib" data-bib="__list" title="Copy BibTeX">BibTeX</button>';
+    $('#citing').hidden = false;
+  }
 
   /* ---------- boot ---------- */
   const nSections = groups.reduce((n, g) => n + g.sections.length, 0);
