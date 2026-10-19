@@ -407,10 +407,10 @@
   });
 
   /* ---------- citing the list itself (Zenodo concept DOI, so it always resolves to the latest version) ---------- */
-  const listBibtex = () => `@misc{wang_awesome_spatial_transcriptomics,\n  author = {Wang, Rui},\n  title = {Awesome Spatial Transcriptomics},\n`
+  const listBibtex = () => `@misc{awesome_spatial_transcriptomics,\n  title = {Awesome Spatial Transcriptomics},\n`
     + `  publisher = {Zenodo},\n  year = {${D.cite.year}},\n  doi = {${D.cite.doi}},\n  url = {https://doi.org/${D.cite.doi}}\n}`;
   if (D.cite) {
-    $('#cite').innerHTML = `Wang R. <i>Awesome Spatial Transcriptomics</i>. Zenodo, ${D.cite.year}. `
+    $('#cite').innerHTML = `<i>Awesome Spatial Transcriptomics</i>. Zenodo, ${D.cite.year}. `
       + `<a href="https://doi.org/${esc(D.cite.doi)}" target="_blank" rel="noopener">doi:${esc(D.cite.doi)}</a>`
       + '<button type="button" class="bib" data-bib="__list" title="Copy BibTeX">BibTeX</button>';
     $('#citing').hidden = false;
