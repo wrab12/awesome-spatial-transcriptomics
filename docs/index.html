@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome Spatial Transcriptomics</title>
+<meta name="description" content="A curated, verified list of methods, software, foundation models, data resources and tutorials for spatial transcriptomics, ordered by analysis step, with references, citation counts and BibTeX.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Awesome Spatial Transcriptomics">
+<meta property="og:description" content="Methods, software, foundation models, data resources and tutorials for spatial transcriptomics, ordered by analysis step.">
+<meta property="og:url" content="https://wrab12.github.io/awesome-spatial-transcriptomics/">
+<meta property="og:image" content="https://wrab12.github.io/awesome-spatial-transcriptomics/og.png">
+<link rel="canonical" href="https://wrab12.github.io/awesome-spatial-transcriptomics/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='10' cy='9' r='4.2' fill='%235b48a2'/%3E%3Ccircle cx='20' cy='9' r='4.2' fill='%23d9667f'/%3E%3Ccircle cx='5' cy='17' r='4.2' fill='%232f2160'/%3E%3Ccircle cx='15' cy='17' r='4.2' fill='%238e6cc4'/%3E%3Ccircle cx='25' cy='17' r='4.2' fill='%232e9c8e'/%3E%3Ccircle cx='10' cy='25' r='4.2' fill='%23f0aebf'/%3E%3Ccircle cx='20' cy='25' r='4.2' fill='%23e2a33b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css?v=72098a6e95">
+<script>try { var t = localStorage.getItem('ast-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body>
+<a class="skip" href="#list">Skip to the list</a>
+
+<header class="masthead">
+  <div class="wrap mast-inner">
+    <a class="brand" href="./">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="10" cy="9" r="4.2" fill="#5b48a2"/><circle cx="20" cy="9" r="4.2" fill="#d9667f"/>
+        <circle cx="5" cy="17" r="4.2" fill="#2f2160"/><circle cx="15" cy="17" r="4.2" fill="#8e6cc4"/><circle cx="25" cy="17" r="4.2" fill="#2e9c8e"/>
+        <circle cx="10" cy="25" r="4.2" fill="#f0aebf"/><circle cx="20" cy="25" r="4.2" fill="#e2a33b"/>
+      </svg>
+      <span>Awesome Spatial Transcriptomics</span>
+    </a>
+    <nav class="mast-links" aria-label="Project links">
+      <a class="hide-sm" href="#methods">Methods</a>
+      <a class="hide-sm" href="https://github.com/wrab12/awesome-spatial-transcriptomics/issues/new">Suggest an entry</a>
+      <a class="gh" href="https://github.com/wrab12/awesome-spatial-transcriptomics" title="Star the list on GitHub">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span>GitHub</span><span class="gh-stars" id="repo-stars"></span>
+      </a>
+      <button type="button" class="icon-btn" id="theme" aria-label="Switch color theme" title="Switch color theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="titleblock wrap">
+    <h1>Awesome Spatial Transcriptomics</h1>
+    <p class="standfirst">A curated list of methods, software, foundation models, data resources and tutorials for spatial transcriptomics and the single-cell analyses it relies on, with each entry checked against its paper and code.</p>
+  </section>
+
+  <figure class="fig wrap" id="fig1">
+    <ol class="route" id="flow" aria-label="Analysis steps"></ol>
+    <div class="route-sub" id="subnav" hidden></div>
+    <figcaption><b>Figure 1</b> <span id="fig-caption">Sections follow a typical analysis, from data generation to interpretation. Select a step to show only its sections.</span></figcaption>
+  </figure>
+
+  <div class="wrap body">
+    <nav class="toc" id="toc" aria-label="Contents">
+      <h2>Contents</h2>
+      <ol id="toc-list"></ol>
+      <a class="toc-methods" href="#methods">Methods and sources</a>
+    </nav>
+
+    <section class="main" aria-label="Entries">
+      <div class="tools" role="search">
+        <label class="search" for="q">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.24-1.42 1.42-4.24-4.25A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" fill="currentColor"/></svg>
+          <input id="q" type="search" placeholder="Search methods, platforms, authors…" autocomplete="off" spellcheck="false" aria-label="Search the list">
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+        <div class="selects">
+          <label>Language
+            <select id="f-lang"><option value="all">Any</option><option value="python">Python</option><option value="r">R</option><option value="other">Other</option></select>
+          </label>
+          <label>Paper
+            <select id="f-paper"><option value="all">Any</option><option value="peer">Peer-reviewed</option><option value="preprint">Preprint</option></select>
+          </label>
+          <label>Published
+            <select id="f-year"><option value="all">Any year</option><option value="2024">2024 or later</option><option value="2021">2021–2023</option><option value="2020">2020 or earlier</option></select>
+          </label>
+          <label>Order
+            <select id="sort">
+              <option value="workflow">As curated</option>
+              <option value="cites">Most cited</option>
+              <option value="stars">Most GitHub stars</option>
+              <option value="year">Newest paper</option>
+              <option value="pushed">Recently updated</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+        </div>
+        <div class="checks">
+          <label><input type="checkbox" id="group" checked> Group by section</label>
+          <label><input type="checkbox" id="hide-unmaintained"> Hide unmaintained</label>
+          <label><input type="checkbox" id="hide-noncommercial"> Hide non-commercial licenses</label>
+          <button type="button" class="link-btn" id="reset">Reset</button>
+        </div>
+        <p class="quick" id="quick"></p>
+      </div>
+      <div class="countbar">
+        <p class="count" id="count" aria-live="polite"></p>
+        <span class="exports"><button type="button" class="link-btn" id="export" title="Download the references shown as a .bib file">Download BibTeX</button><span class="sep">·</span><button type="button" class="link-btn" id="export-csv" title="Download the entries shown as a spreadsheet">CSV</button></span>
+      </div>
+      <div id="list"></div>
+      <noscript><p class="empty">This page needs JavaScript. The full list is also in the <a href="https://github.com/wrab12/awesome-spatial-transcriptomics#readme">README</a>.</p></noscript>
+    </section>
+  </div>
+
+  <section class="methods wrap" id="methods" aria-labelledby="methods-title">
+    <h2 id="methods-title">Methods and sources</h2>
+    <div class="methods-grid">
+      <div>
+        <h3>Scope</h3>
+        <p>Methods, software, foundation models, data and learning materials for spatial transcriptomics, plus the single-cell methods that spatial analyses build on. Most software is listed with its paper; preprints are marked.</p>
+        <h3>Ordering</h3>
+        <p>Sections follow the steps in Figure 1, and software within a section is ordered by GitHub stars. Where independent <a href="#sec=benchmarks--evaluation" data-sec="benchmarks--evaluation">benchmarks</a> exist, they are listed under the section heading.</p>
+      </div>
+      <div>
+        <h3>Verification</h3>
+        <p>Every link, repository and DOI is checked automatically, and every description against its paper and documentation.</p>
+        <h3>Sources</h3>
+        <p>Stars and last commits come from GitHub, citation counts from Crossref.</p>
+      </div>
+      <div>
+        <h3>Contributing</h3>
+        <p>Suggest additions or corrections through <a href="https://github.com/wrab12/awesome-spatial-transcriptomics/issues">GitHub issues</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="colophon">
+      <p id="colophon"></p>
+      <p>Maintained by <a href="https://wrab12.github.io">Rui Wang</a><span class="sep">·</span>GenOT is the maintainer's own work.</p>
+      <p id="built"></p>
+    </div>
+    <p><a href="https://github.com/wrab12/awesome-spatial-transcriptomics">github.com/wrab12/awesome-spatial-transcriptomics</a></p>
+  </div>
+</footer>
+
+<script src="data.js?v=21f14a9a4c"></script>
+<script src="app.js?v=a7f6e72283"></script>
+</body>
+</html>

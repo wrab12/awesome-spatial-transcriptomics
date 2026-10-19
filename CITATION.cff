@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this list, please cite it as below."
+type: dataset
+title: "Awesome Spatial Transcriptomics"
+abstract: >-
+  A curated list of methods, software, foundation models, data resources and tutorials
+  for spatial transcriptomics and the single-cell analyses it relies on, ordered by
+  analysis step, with each entry checked against its paper and code.
+authors:
+  - family-names: Wang
+    given-names: Rui
+    orcid: "https://orcid.org/0009-0001-1318-5038"
+repository-code: "https://github.com/wrab12/awesome-spatial-transcriptomics"
+url: "https://wrab12.github.io/awesome-spatial-transcriptomics/"
+license: CC0-1.0
+keywords:
+  - spatial transcriptomics
+  - single-cell genomics
+  - bioinformatics
+  - awesome list
